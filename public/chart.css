@@ -1,0 +1,210 @@
+/*
+* Global styles
+*/
+
+body {
+    font-family: 'Lato', 'Helvetica';
+    font-size: 62.5%;
+    color: #fff;
+    line-height: 1;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    background: #000;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: 100%;
+}
+
+audio {
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+#official-chart {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+* Headers
+*/
+
+.app-header {
+    background: #3B8183;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+    text-align: center;
+    margin-bottom: 2px;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0 2px 2px rgba(0,0,0,.5);
+    border-top: 1px solid rgba(255,255,255,.2);
+    /*border-bottom: 2px solid rgba(0,0,0,.1);*/
+    width: 100%;
+}
+
+.app-header-wrapper {
+    width: 70%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15%;
+}
+
+.app-header h1 {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.app-spinner {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    visibility: hidden;
+    width: 20px;
+    height: 20px;
+}
+
+.loading .app-spinner {
+    visibility: visible;
+}
+
+.app-more-icon {
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 44px;
+    height: 44px;
+}
+
+.app-more-icon div {
+    background: rgba(0,0,0,.3);
+    display: block;
+    height: 3px;
+    margin: 4px 12px 0 7px;
+    border-radius: 10px;
+    -webkit-transition: background-color .3s ease;
+}
+
+.active.app-more-icon div {
+    background: rgba(0,0,0,.5);
+}
+
+.app-more-icon .app-more-line1 {
+    margin-top: 13px;
+}
+
+.app-body {
+    position: relative;
+    z-index: 0;
+    padding-top: 52px;
+}
+
+/* Nav */
+
+.app-nav {
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: height .3s ease;
+}
+
+.app-nav li {
+    border-top: 2px solid rgba(0,0,0,.05);
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 44px;
+    line-height: 44px;
+}
+
+/*
+* Chart entry
+*/
+
+@media screen and (min-width: 480px) {
+    .chart-entry {
+        float: left;
+        width: 50%;
+    }
+
+    .chart-entry-inner {
+        height: 10em;
+    }
+
+    .chart-entry:nth-child(odd) .chart-entry-inner {
+        margin-right: 3px;
+    }
+}
+
+.chart-entry {
+    padding: 2px 0;
+}
+
+.chart-entry span {
+    display: block;
+}
+
+.chart-entry .title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.chart-entry .artist {
+    font-size: 1.4em;
+}
+
+.chart-entry .position {
+    font-size: 1.6em;
+    line-height: 2em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 100px;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    -webkit-transition: border-color .2s;
+}
+
+.chart-entry-inner {
+    background: #FF9C5B;
+    overflow: hidden;
+    padding: 1em 5em 1em 1em;
+    position: relative;
+    -webkit-transition: background-color .2s;
+    border-radius: 2px;
+    border-top: 1px solid rgba(255,255,255,.2);
+}
+
+.active .position {
+    border-color: #fff;
+}
+
+.chart-status-up .chart-entry-inner {
+    background-color: #649970;
+}
+
+.chart-status-down .chart-entry-inner {
+    background-color: #F5634A;
+}
+
+.active .chart-entry-inner {
+    background-color: #999;
+}

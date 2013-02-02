@@ -1,0 +1,11 @@
+<ol>
+    <% @chart.entries.each do |entry| %>
+    <li class="chart-entry chart-status-<%= entry.status %>" data-weeksinchart="<%= entry.weeksinchart %>" data-lastweek="<%= entry.lastweek %>" data-position="<%= entry.position %>" data-playlist="<%= entry.playlist %>">
+        <div class="chart-entry-inner">
+            <span class="position"><%= entry.position %></span>
+            <span class="title"><%= entry.title %></span>
+            <span class="artist"><%= entry.artist['name'] %></span>
+        </div>
+    </li>
+    <% end %>
+</ol>

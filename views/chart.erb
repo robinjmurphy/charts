@@ -1,0 +1,19 @@
+<header class="app-header"><a href="#">
+    <div class="app-header-wrapper">
+        <a href="#charts" class="app-more-icon">
+            <div class="app-more-line1"></div>
+            <div class="app-more-line2"></div>
+            <div class="app-more-line3"></div>
+        </a>
+        <h1><%= @chart.name %></h1>
+        <img src="/loading.gif" class="app-spinner" />
+    </div>
+    
+    <div class="app-nav">
+        <%= erb(:nav, :layout => false) %>
+    </div>
+</a>
+</header>
+<div class="app-body">
+    <%= erb(:entries, :layout => false) %>
+</div>

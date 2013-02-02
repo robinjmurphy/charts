@@ -1,0 +1,6 @@
+.bundle
+vendor
+spec/fixtures
+Gemfile.lock
+*.gem
+templates
