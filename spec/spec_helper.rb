@@ -35,6 +35,7 @@ class Mock
             'artist' => 'PSY'
         }
     end
+    
     def sample_artist_data
         {
             'name' => 'PSY',

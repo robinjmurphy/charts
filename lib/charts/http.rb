@@ -6,7 +6,7 @@ module Charts
             begin
                 response = RestClient.get url
             rescue RestClient::ResourceNotFound
-                raise Exceptions::ChartNotFound.new("No chart found at #{url}")
+                raise Exceptions::ResourceNotFound
             end
         end
     end

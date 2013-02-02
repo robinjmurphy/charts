@@ -34,7 +34,7 @@ describe Charts::Chart do
     end
 
     it 'raises an exception for a chart that cannot be found' do
-        expect { Chart.find_by_path('/radio1/chart/foo') }.to raise_error Charts::Exceptions::ChartNotFound
+        expect { Chart.find_by_path('/radio1/chart/foo') }.to raise_error Charts::Exceptions::ResourceNotFound
     end
     
 end

@@ -1,15 +1,15 @@
 module Charts
     class Entry
-        attr_accessor :title,
-                      :position,
-                      :lastweek,
-                      :weeksinchart,
-                      :artist,
-                      :label,
-                      :catno,
-                      :image,
-                      :status,
-                      :playlist
+        attr_accessor   :title,
+                        :position,
+                        :lastweek,
+                        :weeksinchart,
+                        :artist,
+                        :label,
+                        :catno,
+                        :image,
+                        :status,
+                        :playlist
 
         def initialize options
             @title = options['title']

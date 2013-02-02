@@ -1,6 +1,6 @@
 <ol>
     <% @chart.entries.each do |entry| %>
-    <li class="chart-entry chart-status-<%= entry.status %>" data-weeksinchart="<%= entry.weeksinchart %>" data-lastweek="<%= entry.lastweek %>" data-position="<%= entry.position %>" data-playlist="<%= entry.playlist %>">
+    <li class="chart-entry chart-status-<%= entry.status %>" data-weeksinchart="<%= entry.weeksinchart %>" data-lastweek="<%= entry.lastweek %>" data-position="<%= entry.position %>" <% if entry.playlist %> data-playlist="<%= entry.playlist %>"<% end %>>
         <div class="chart-entry-inner">
             <span class="position"><%= entry.position %></span>
             <span class="title"><%= entry.title %></span>

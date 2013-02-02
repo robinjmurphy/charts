@@ -1,18 +1,21 @@
 require 'json'
 require 'charts/url'
 require 'charts/http'
+require 'charts/exceptions'
 
 module Charts
     class Chart
         attr_accessor :path, :name, :date, :type, :entries
 
-        class << self
-            def find_by_path path
-                url = Url.new.from_path path
+        def self.find_by_path path
+            url = Url.new.from_path path
+            begin
                 response = Http.get url
-                data = JSON.load(response.to_str)
-                self.new data['chart']
+            rescue Exceptions::ResourceNotFound
+                raise Exceptions::ChartNotFound.new("There was no chart data found at #{url}")
             end
+            data = JSON.load response.to_str
+            self.new data['chart']
         end
 
         def initialize options
