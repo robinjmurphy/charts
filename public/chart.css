@@ -1,6 +1,6 @@
-/*
-* Global styles
-*/
+/**
+ *  Global styles
+ */
 
 body {
     font-family: 'Lato', 'Helvetica';
@@ -21,8 +21,6 @@ body {
 
 audio {
     display: none;
-    height: 0;
-    width: 0;
 }
 
 a:link,
@@ -33,14 +31,14 @@ a:active {
     text-decoration: none;
 }
 
+/**
+ *  Application styles
+ */
+
 #official-chart {
     font-size: 1em;
     line-height: 1.4;
 }
-
-/*
-* Headers
-*/
 
 .app-header {
     background: #3B8183;
@@ -52,7 +50,6 @@ a:active {
     z-index: 2;
     box-shadow: 0 2px 2px rgba(0,0,0,.5);
     border-top: 1px solid rgba(255,255,255,.2);
-    /*border-bottom: 2px solid rgba(0,0,0,.1);*/
     width: 100%;
 }
 
@@ -117,8 +114,6 @@ a:active {
     padding-top: 52px;
 }
 
-/* Nav */
-
 .app-nav {
     overflow: hidden;
     height: 0;
@@ -133,9 +128,9 @@ a:active {
     line-height: 44px;
 }
 
-/*
-* Chart entry
-*/
+/**
+ *  Chart entries
+ */
 
 @media screen and (min-width: 480px) {
     .chart-entry {
