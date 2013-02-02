@@ -21,6 +21,8 @@ body {
 
 audio {
     display: none;
+    height: 0;
+    width: 0;
 }
 
 a:link,
