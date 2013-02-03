@@ -1,6 +1,7 @@
 # Charts
 
 [![Code Climate](https://codeclimate.com/github/robinjmurphy/charts.png)](https://codeclimate.com/github/robinjmurphy/charts)
+[![Build Status](https://travis-ci.org/robinjmurphy/charts.png?branch=master)](https://travis-ci.org/robinjmurphy/charts)
 
 Charts is a mobile web application that lets you explore UK music charts. It uses chart data provied by the [BBC Radio 1 Developers API](http://www.bbc.co.uk/radio1/developers/api/), although it is in no way affiliated with or endorsed by the BBC.
 
