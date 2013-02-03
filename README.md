@@ -1,5 +1,7 @@
 # Charts
 
+[![Code Climate](https://codeclimate.com/github/robinjmurphy/charts.png)](https://codeclimate.com/github/robinjmurphy/charts)
+
 Charts is a mobile web application that lets you explore UK music charts. It uses chart data provied by the [BBC Radio 1 Developers API](http://www.bbc.co.uk/radio1/developers/api/), although it is in no way affiliated with or endorsed by the BBC.
 
 I'm using it as a bit of an experiment to create a mobile app using web technologies. It is designed to be added to the homescreen in *iOS* and run as a full screen app, although it will work just fine in any *WebKit*-based browser.
