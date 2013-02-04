@@ -5,6 +5,10 @@ $LOAD_PATH.push File.expand_path("../lib", __FILE__)
 require 'sinatra'
 require 'charts'
 
+before do
+  expires 30, :public, :must_revalidate
+end
+
 get '/' do
     @chart = Charts::Chart.find_by_path 'radio1/chart/singles'
     @title = @chart.name
