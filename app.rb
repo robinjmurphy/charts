@@ -35,7 +35,7 @@ post '/read_playlist' do
     begin
         mp3_url = Charts::Url.new.mp3_from_playlist playlist_url
         JSON.generate({ :mp3_url => mp3_url })
-    rescue Charts::Exceptions::PlaylistNotFound 
+    rescue Charts::Exceptions::PlaylistNotFound => exception
         status 404
         body exception.message
     end
